@@ -6,9 +6,7 @@ const app = express();
 import Stripe from "stripe";
 
 // const stripe = new Stripe(process.env.STRIPE_SECRET_KEY);
-const stripe = new Stripe(
-  "sk_test_51Rg5XVIXSwnWaBqBAGnP6ZoDzMuYB46G0XVwEnXK8rfL7GAGzhnEEHmDv2XksZoMO5gAT3EMHcLh3MMbQJELxeLJ00c51lPERP"
-);
+const stripe = new Stripe(process.env.STRIPE_SECRET_KEY);
 app.use(express.json());
 
 app.use(
